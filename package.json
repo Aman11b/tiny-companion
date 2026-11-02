@@ -1,19 +1,25 @@
 {
   "name": "tiny-companion",
-  "version": "1.0.0",
-  "description": "tiny-companion",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A tiny interactive animal companion for websites.",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aman11b/tiny-companion.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "interactive-pet",
+    "website-companion",
+    "virtual-pet",
+    "javascript",
+    "typescript",
+    "browser-library"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Aman11b/tiny-companion/issues"
   },

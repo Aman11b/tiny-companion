@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // JavaScript and browser environment
+    "target": "ES2022",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+
+    // Module system for Vite
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    // Type safety
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // TypeScript checking only; Vite handles compilation
+    "noEmit": true,
+
+    // Module compatibility
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+
+    // Additional checks
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": ["src"]
+}
