@@ -1,16 +1,26 @@
+import { resolveOptions } from "../config/resolve-options";
+import type { CompanionOptions } from "../config/types";
+import { positionCompanion } from "./position-companion";
+
 export interface CompanionRoot {
   host: HTMLDivElement;
   shadowRoot: ShadowRoot;
 }
 
-export function createCompanionRoot(): CompanionRoot {
+//* options: CompanionOptions means the entire object has the CompanionOptions type.
+//* { option: CompanionOptions } attempts to destructure an object property and is not valid syntax for what we're trying to achieve.
+
+export function createCompanionRoot(
+  options: CompanionOptions = {},
+): CompanionRoot {
+  const resolvedOptions = resolveOptions(options);
   const host = document.createElement("div");
   host.id = "tiny-companion-root";
 
-  host.style.position = "fixed";
-  host.style.right = "16px";
-  host.style.bottom = "16px";
-  host.style.zIndex = "2147483647";
+  positionCompanion({
+    host,
+    position: resolvedOptions.position,
+  });
 
   // * The browser's attachShadow() method creates a Shadow DOM tree attached to an element.
 
