@@ -66,9 +66,9 @@ The project is currently in its initial setup phase.
 
 | Area                              | Status      |
 | --------------------------------- | ----------- |
-| Repository and project setup      | In progress |
-| TypeScript and Vite configuration | In progress |
-| Companion rendering               | Planned     |
+| Repository and project setup      | Done        |
+| TypeScript and Vite configuration | Done        |
+| Companion rendering               | In Progress |
 | Movement system                   | Planned     |
 | Website awareness                 | Planned     |
 | Behaviour system                  | Planned     |
